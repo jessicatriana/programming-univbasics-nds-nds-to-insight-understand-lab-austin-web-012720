@@ -4,8 +4,20 @@ require 'directors_database'
 
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
-  nil
+  pp(nds)
 end
 
+pretty_print_nds(directors_database)
+
 def print_first_directors_movie_titles
-end
+  counter = 0
+  while counter < directors_database[0][:movies].length do
+    if directors_database[0][:movies][counter] == [:title]
+      p directors_database[0][:movies][counter]
+    end
+    counter += 1
+  end
+  end
+
+
+print_first_directors_movie_titles
