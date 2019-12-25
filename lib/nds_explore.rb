@@ -15,7 +15,7 @@ def print_first_directors_movie_titles
     if directors_database[0][:movies][counter] == [:title]
       
     end
-    p directors_database[0][:movies][counter][:title]
+    print directors_database[0][:movies][counter][:title]
     counter += 1
   end
   end
